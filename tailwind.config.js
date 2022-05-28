@@ -16,7 +16,7 @@ module.exports = {
           300: '#e3e5e8',
           200: '#ebedef',
           100: '#f2f3f5',
-        },
+        }
       },
       spacing: {
         88: '22rem',

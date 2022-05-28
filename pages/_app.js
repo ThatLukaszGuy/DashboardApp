@@ -10,10 +10,12 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"></meta>
+        
         <title>Dashboard</title>
       </Head>
       
-      <ChakraProvider>
+      <ChakraProvider portalZIndex={40}>
         <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVERURL} >
             
             <Component {...pageProps} />

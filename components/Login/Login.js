@@ -9,11 +9,11 @@ export default function Login() {
   
     return (
     <div className={styles.bgLoginSvg}>
-        <div className=' relative h-screen login'>
+        <div className=' relative h-screen login max-h-screen'>
             <div className='child'>
-                <div className='flex md:flex-row bg-gray-900 rounded-md md:flex flex-col  px-8 shadow-2xl' >
+                <div className='flex md:flex-row bg-gray-900 rounded-md md:flex flex-col  px-8 shadow-2xl min-w-0' >
                     {/*left side*/}    
-                    <div className='flex flex-col justify-center  text-center py-20 px-4 flex-[1_1_0%] '>
+                    <div className='flex flex-col justify-center  text-center py-20 px-4 flex-[1_1_0%] min-w-0'>
                         <div>
                             <h3 className='text-white font-bold text-2xl'>Choose wallet to login with</h3>
                         </div>

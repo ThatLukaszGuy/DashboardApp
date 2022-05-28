@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../Nav/Nav'
+import Nav from '../Layout/Nav'
 
 export default function NotLogSol() {
   const refreshPage = () => {

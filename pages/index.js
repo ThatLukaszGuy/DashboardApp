@@ -1,8 +1,9 @@
 import About from '../components/About/About';
 import Landing from '../components/Landing/Landing';
 import Login from '../components/Login/Login';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
+import Sidebar from '../components/Layout/Sidebar';
+import Footer from '../components/Layout/Footer';
+import Latest from '../components/Latest/Latest';
 
 export default function Home() {
 
@@ -22,6 +23,11 @@ export default function Home() {
         <div id='login'> 
           <Login/>
         </div>
+
+        <div id='other'>
+          <Latest />
+        </div>
+
         <div id='about'>
           <About />
         </div>

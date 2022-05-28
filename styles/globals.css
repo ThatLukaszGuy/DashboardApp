@@ -71,6 +71,14 @@ html {
   transform: translate(-50%, -50%);
   }
 
+  @media (min-width: 768px ) and (min-height: 600px) { 
+    .child {
+
+    }
+
+
+   }
+
 /*login*/
 .login {
   width: calc(100vw - 64px);
@@ -92,6 +100,14 @@ html {
   background-size: cover;
   max-width: 100vw;
 }
+
+.latest-container {
+  width: calc(100vw - 64px);
+  margin-left: 64px;
+  position: relative;
+  max-width: 100vw;
+}
+
 
 .custom-shape-divider-top-1648675677 {
   position: absolute;
@@ -142,8 +158,62 @@ html {
 }
 
 
+/*below other*/
+.custom-shape-divider-top-1653175887 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1653175887 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-top-1653175887 .shape-fill {
+  fill: #2F3136;
+}
 
 
+
+/*contact*/
+
+.contact-container {
+  background-image: url('/images/mountains.svg');
+  height: 70vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+}
+
+.custom-shape-divider-bottom-1653421206 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1653421206 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 131px;
+}
+
+.custom-shape-divider-bottom-1653421206 .shape-fill {
+  fill: #36393F;
+}
 
 
 /*polygon background svg just ignore it*/

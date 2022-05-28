@@ -1,0 +1,44 @@
+/*all data*/
+
+
+  
+  .allDataContainer {
+    background-image: url('/images/2t05m8.jpg');
+    height: 60vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+  }
+  
+  
+  .allSvg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .allSvg svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 113px;
+  }
+  
+  .allSvg .shapeFill {
+    fill: #2F3136;
+  }
+  
+  .pSetting {
+    padding-bottom: 40vh;
+    --tw-bg-opacity: 1;
+    background-color: rgb(47 49 54 / var(--tw-bg-opacity));
+  }
+  
