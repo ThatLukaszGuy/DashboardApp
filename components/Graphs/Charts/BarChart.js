@@ -33,8 +33,6 @@ export default function BarChart() {
       try {
         const response = await axios.request(coinGeckoSol)
         setChart(response.data.market_data)
-        console.log(response.data.market_data.market_cap.usd)
-        console.log(response.data.market_data.total_volume.usd)
         setIsLoading(false)
       } catch (err) {
         console.error(err)
