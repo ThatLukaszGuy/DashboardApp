@@ -2,7 +2,7 @@ import React from 'react'
 import { FaDatabase, FaPaperPlane} from 'react-icons/fa'
 import { BsGraphUp } from 'react-icons/bs'
 import { GiMoneyStack } from 'react-icons/gi'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 
 export default function LatestContent() {
