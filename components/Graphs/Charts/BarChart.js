@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import axios from 'axios'
 import { coinGeckoSol } from '../../axios/axios'
 import { Bar } from 'react-chartjs-2';
+import { Text } from '@chakra-ui/react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -80,9 +81,11 @@ const options = {
 }
   
   return (
-    <div className='max-h-[100vh] min-h-[70vh] max-w-[90vw] relative'>
-      <Bar data={data} options={options} width={300}/>
-
-    </div>
+    <>
+      <div className='max-h-[100vh] min-h-[70vh] max-w-[90vw] relative'>
+        <Bar data={data} options={options} width={300}/>
+      </div>
+      <Text fontSize={'3xl'} color={'gray.100'} maxW={'90vw'} align={'center'} mt={'2'}>Sol - Data</Text>
+    </>
   )
 }
