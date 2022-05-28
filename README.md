@@ -100,6 +100,8 @@ You will need a package manager (e.g: npm or yarn). A free moralis server for th
 
 5. Hide appID and ServerURL in .env variable
 
+6. Get all API Keys from above mentioned providers
+
 6. Run it locally with ``` npm run dev```
 
 
