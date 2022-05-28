@@ -1,5 +1,5 @@
 import React,{ useRef } from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 import PrivacyDrawer from './Drawer'
 import { useDisclosure } from '@chakra-ui/react'
 

@@ -3,7 +3,7 @@ import {  BsFillFileEarmarkFill } from 'react-icons/bs';
 import {  FaEthereum , FaPhone } from 'react-icons/fa';
 import {AiFillHome} from 'react-icons/ai'
 import {RiMoneyDollarCircleFill , RiQuestionnaireFill, RiMistLine} from 'react-icons/ri'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 
 export default function Sidebar() {
