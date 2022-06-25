@@ -65,10 +65,10 @@ const options = {
   
   return (
     <>    
-      <div className='max-w-[80vw] '>
+      <div className='max-w-[  |80vw] ' style={{width: '99%', height: "85%"}}>
         <Doughnut data={data} width={300} height={270} options={options}/>
       </div>
-      <Text fontSize={'3xl'} color={'gray.100'} maxW={'80vw'} align={'center'} mt={'2'}>Total Volume</Text>
+      <Text fontSize={'3xl'} color={'gray.100'} maxW={'80vw'} align={'center'} mt={'1'}>Total Volume</Text>
     </>
   )
 }

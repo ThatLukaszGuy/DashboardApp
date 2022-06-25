@@ -75,7 +75,7 @@ export default function ExchangeHandler() {
                     
                     }
 
-        <div className='grid md:grid-cols-2 place-items-stretch   lg:grid-cols-4 gap-4 mt-20 sm:grid-cols-1 grid-cols-1 mx-4'>
+        <div className='grid md:grid-cols-2 place-items-stretch pb-5   lg:grid-cols-4 gap-4 mt-20 sm:grid-cols-1 grid-cols-1 mx-4'>
 
             {filteredEx.map((ex,i) => {
                 return (

@@ -82,7 +82,7 @@ const options = {
   
   return (
     <>
-      <div className='max-h-[100vh] min-h-[70vh] max-w-[90vw] relative'>
+      <div className='max-h-[100vh] min-h-[70vh] max-w-[90vw] relative' style={{width: '99%', height: "85%"}}>
         <Bar data={data} options={options} width={300}/>
       </div>
       <Text fontSize={'3xl'} color={'gray.100'} maxW={'90vw'} align={'center'} mt={'2'}>Sol - Data</Text>
