@@ -10,5 +10,6 @@
 •	horizontal mobile view tweaks ✓
 •	in Contact page make header have a higher z index than the svg ✓
 •	favicon for all browser sizes ✓
-•	margin for landing
-•	margin for about
+•	margin for landing ✓
+•	margin for about ✓
+•   404 page ✓
