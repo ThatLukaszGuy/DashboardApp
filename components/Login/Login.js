@@ -10,7 +10,7 @@ export default function Login() {
     return (
     <div className={styles.bgLoginSvg}>
         <div className=' relative h-screen login max-h-screen flex flex-col  flex-wrap  items-center justify-center'>
-            <div className='mx-4'>
+            <div className='mx-4 md:mx-10'>
                 <div className='flex md:flex-row bg-gray-900 rounded-md md:flex flex-col  px-8 shadow-2xl min-w-0' >
                     {/*left side*/}    
                     <div className='flex flex-col justify-center  text-center py-20 px-4 flex-[1_1_0%] min-w-0'>
