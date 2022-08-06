@@ -1,34 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import ExchangeBanner from './ExchangeBanner'
-import { coinGeckoExchange } from '../axios/axios'
-import axios from 'axios'
 import ExchangeCard from './ExchangeCard'
-import { Spinner,Box } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { BsSearch } from 'react-icons/bs'
 import styles from './Exchange.module.css'
 
-export default function ExchangeHandler() {
+export default function ExchangeHandler({exchanges}) {
   
-    const [exchanges, setExchanges] = useState([])
+
     const [search, setSearch] = useState('')
-    const [isLoading, setIsLoading] = useState(true)
 
 
-    useEffect(() => {
-        const fetchExchanges = async () => {
-            try {
-                const response = await axios.request(coinGeckoExchange)
-                setExchanges(response.data)
-                setIsLoading(false)
-            } catch (err) {
-                console.error(err)
-            }
-
-        }
-
-        fetchExchanges()
-    }, [])
-  
     const handleChange = e => {
         setSearch(e.target.value)
     }
@@ -58,22 +40,6 @@ export default function ExchangeHandler() {
                 placeholder='Search'
                 className='my-4 w-[300px] focus:ring-pink-700  rounded-md p-2 focus:border-pink-700 focus:outline-none border-2'
                 />
-
-        {isLoading 
-                    ? 
-                    <div className='alldata-loader grid-cols-1 grid place-items-center'>
-                        <Spinner 
-                            size='xl' 
-                            color='pink.500'   
-                            thickness='4px'
-                            speed='0.65s'
-                            emptyColor='gray.800' />
-                    </div>
-                    : 
-                    
-                    <div></div> 
-                    
-                    }
 
         <div className='grid md:grid-cols-2 place-items-stretch pb-5   lg:grid-cols-4 gap-4 mt-20 sm:grid-cols-1 grid-cols-1 mx-4'>
 

@@ -2,8 +2,19 @@ import React from 'react'
 import AllDataHandler from '../../components/AllData/AllDataHandler'
 import styles from '../../components/AllData/AllData.module.css'
 import Head from 'next/head'
+import { coinGecko } from '../../components/axios/axios'
+import axios from 'axios'
 
-export default function alldata() {
+export async function getStaticProps() {
+  const response = await axios.request(coinGecko);
+  return {
+    props: {coinData : JSON.parse(JSON.stringify(response.data))}
+  }
+
+}
+
+
+export default function alldata({ coinData }) {
   return (
     <>
     
@@ -13,7 +24,7 @@ export default function alldata() {
 
     <div className={styles.pSetting}>
 
-      <AllDataHandler />
+      <AllDataHandler coins={coinData}/>
     </div>  
     
     </>

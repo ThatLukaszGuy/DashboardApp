@@ -38,15 +38,17 @@ function MyApp({ Component, pageProps }) {
         <title>Dashboard</title>
       </Head>
       
-      <ChakraProvider portalZIndex={40}>
-      { pageLoading || firstLoading
-            ? (<Loader />)
-          :<MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVERURL} >
-              <Component {...pageProps} />
-            </MoralisProvider>
-          
-          } 
-
+      <ChakraProvider >
+      
+          <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVERURL} >
+          { pageLoading || firstLoading
+                ? (<Loader />)
+              :
+                  <Component {...pageProps} />
+              
+              
+              } 
+          </MoralisProvider>
       </ChakraProvider>
     </>
   )

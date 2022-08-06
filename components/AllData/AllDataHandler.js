@@ -1,32 +1,11 @@
-import axios from 'axios'
-import React, { useState, useEffect } from 'react'
-import { coinGecko } from '../axios/axios'
+import React, { useState } from 'react'
 import AllDataBanner from './AllDataBanner'
 import Coins from './Coins'
-import { Spinner } from '@chakra-ui/react'
 import { BsSearch } from 'react-icons/bs'
-import styles from './AllData.module.css'
 
-export default function AllDataHandler() {
+export default function AllDataHandler({coins}) {
   
-    const [coins, setCoins] = useState([])
     const [search, setSearch] = useState('')
-    const [isLoading, setIsLoading] = useState(true)
-
-    useEffect(() => {
-        const fetchCoins = async () => {
-            try {
-                const response = await axios.request(coinGecko)
-                setCoins(response.data)
-                setIsLoading(false)
-            } catch (err) {
-                console.error(err)
-            }
-
-        }
-
-        fetchCoins()
-    }, [])
 
     const handleChange = e => {
         setSearch(e.target.value);
@@ -50,21 +29,6 @@ export default function AllDataHandler() {
                 />
             </div>
             <div className='p-6 border-gray-500 rounded-md border-2 mx-2 bg-gray-700'>
-                {isLoading 
-                    ? 
-                    <div className='h-[90vh] bg-gray-700 grid-cols-1 grid place-items-center'>
-                        <Spinner 
-                            size='xl' 
-                            color='pink.500'   
-                            thickness='4px'
-                            speed='0.65s'
-                            emptyColor='gray.800' />
-                    </div>
-                    : 
-                    
-                    <div></div> 
-                    
-                    }
                 
                 {filteredCoins.map(coin => {
                     return (

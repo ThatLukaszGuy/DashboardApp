@@ -184,7 +184,7 @@ html {
 /*contact*/
 
 .contact-container {
-  background-image: url('/images/mountains.jpg');
+  background-image: url('/images/lsh.svg');
   height: 70vh;
   width: 100vw;
   text-align: center;
@@ -209,6 +209,7 @@ html {
   display: block;
   width: calc(100% + 1.3px);
   height: 131px;
+
 }
 
 .custom-shape-divider-bottom-1653421206 .shape-fill {

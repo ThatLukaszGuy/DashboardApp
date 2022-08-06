@@ -53,13 +53,13 @@ export default function contact() {
     <div className=' bg-gray-700'>
       <div className='contact-container '>
         <SubNav currentRoute='contact' icon={<FaPhone size={32}/>}/>
-        <h1 className=' text-white font-thin text-[70px] z-50'>Contact</h1>
-        <p className='text-gray-100 text-3xl z-50 '>If you wish to work with me, please fill out the form below</p>
-        <div className="custom-shape-divider-bottom-1653421206">
+        <h1 className=' text-white font-thin text-[70px] z-50 relative'  >Contact</h1>
+        <p className='text-gray-100 text-3xl z-50  relative'>If you wish to work with me, please fill out the form below</p>
+        <div className="custom-shape-divider-bottom-1653421206 z-0">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
           </svg>
-      </div>
+        </div>
         
       </div>
 
@@ -81,7 +81,7 @@ export default function contact() {
             
             </Box>
           </div>
-        <button className=' text-white mt-3 mb-2 bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' onClick={onOpen} ref={btnRef}>Learn More</button> 
+        <button className=' text-white mt-3 mb-2 bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm  px-5 py-2.5 text-center' onClick={onOpen} ref={btnRef}>Learn More</button> 
             
       </div>
       <PrivacyDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
@@ -107,7 +107,7 @@ export default function contact() {
 
             </textarea>
           </div>
-          <button type="submit" className="text-white  mt-3 mb-2 bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send !</button>
+          <button type="submit" className="text-white  mt-3 mb-2 bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Send !</button>
         </form>
       </div>
 

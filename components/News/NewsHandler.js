@@ -1,31 +1,14 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import { newsOptions } from '../axios/axios'
-import { LinkBox, Box, Heading, LinkOverlay,Text,Spinner  } from '@chakra-ui/react'
+import React, {  useState } from 'react'
+import { LinkBox, Box, Heading, LinkOverlay,Text } from '@chakra-ui/react'
 import NewsBanner from './NewsBanner'
 import styles from './News.module.css'
 
 
-export default function NewsHandler() {
+export default function NewsHandler({news}) {
   
-  const [news, setNews] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
   const [more, setMore] = useState(false)
 
-  useEffect(() => {
-    const fetchNews = async () => {
-      try {
-        const response = await axios.request(newsOptions)
-        setNews(response.data)
-        setIsLoading(false)
-      } catch (err) {
-        console.error(err)
-      }
-    }
-
-    fetchNews()
-    
-  },[])
 
 
   return (
@@ -40,21 +23,7 @@ export default function NewsHandler() {
         </div>
       <Box backgroundColor={'gray.800'}>
       <div className=' grid grid-cols-1 place-items-center '>
-        {isLoading 
-          ? 
-          <div className={styles.newsLoader}>
-            <Spinner 
-                size='xl' 
-                color='pink.500'   
-                thickness='4px'
-                speed='0.65s'
-                emptyColor='gray.800' />
-          </div>
-        : 
-        
-        <div></div> 
-        
-        }
+
         
         <ul className='grid md:grid-cols-3 lg:grid-cols-4  gap-4 mt-56 sm:grid-cols-2 grid-cols-1 mx-4'>  
           {news? 
