@@ -4,7 +4,7 @@ import Head from "next/head";
 import { newsOptions } from '../../components/axios/axios';
 import axios from 'axios';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await axios.request(newsOptions);
   return {
     props: {news : JSON.parse(JSON.stringify(response.data))}

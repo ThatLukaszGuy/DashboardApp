@@ -46,7 +46,7 @@ export default function ExchangeCard({
             <Box p='6' maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' backgroundColor={'gray.900'} borderColor={'gray.700'} className='sm:hover:scale-105 hover:z-30 ease-in-out duration-300 hover:transform-none hover:border-pink-700 border-transparent border-gray-600 shadow-lg hover:shadow-2xl'>
                 <Stack>
                     <Text
-                        color={'pink.700'}
+                        color={'tailwindPink.600'}
                         textTransform={'uppercase'}
                         fontWeight={800}
                         fontSize={'sm'}
@@ -62,19 +62,19 @@ export default function ExchangeCard({
                     <Text color={'gray.500'}>
                     <List spacing={3}>
                         <ListItem>
-                            <ListIcon as={GoInfo} color='pink.500' />
+                            <ListIcon as={GoInfo} color='tailwindPink.600' />
                             Trust score rank: {trustScoreRank} 
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={GoInfo} color='pink.500' />
+                            <ListIcon as={GoInfo} color='tailwindPink.600' />
                             Trust Score: {trustScore}
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={GoInfo} color='pink.500' />
+                            <ListIcon as={GoInfo} color='tailwindPink.600' />
                             Trading Incentive: {tradingIncentive ? <Icon  as={FaRegThumbsUp} />  : <Icon as={FaRegThumbsDown}/> }
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={GoInfo} color='pink.500' />
+                            <ListIcon as={GoInfo} color='tailwindPink.600' />
                             Trading Volume in BTC (last 24h): {tradeVolume}
                         </ListItem>
                     </List>
@@ -105,22 +105,22 @@ export default function ExchangeCard({
                             <br />
                             <List mt={2}>
                                 <ListItem >
-                                    <ListIcon as={FaHandPointRight} color={'pink.500'}/>
+                                    <ListIcon as={FaHandPointRight} color={'tailwindPink.600'}/>
                                     Established on: {yearEstablished} 
                                 </ListItem>
 
                                 <ListItem >
-                                    <ListIcon as={FaHandPointRight} color={'pink.500'}/>
+                                    <ListIcon as={FaHandPointRight} color={'tailwindPink.600'}/>
                                     Country: {country} 
                                 </ListItem>
 
                                 <ListItem >
-                                    <ListIcon as={FaHandPointRight} color={'pink.500'}/>
+                                    <ListIcon as={FaHandPointRight} color={'tailwindPink.600'}/>
                                     Trade volume (normalized): {tradeVolumeNormalized} 
                                 </ListItem>
 
                                 <ListItem >
-                                    <ListIcon as={FaHandPointRight} color={'pink.500'}/>
+                                    <ListIcon as={FaHandPointRight} color={'tailwindPink.600'}/>
                                     Id on CoinGecko: {id} 
                                 </ListItem>
 
@@ -128,10 +128,10 @@ export default function ExchangeCard({
                         </ModalBody>
 
                         <ModalFooter>
-                            <Button colorScheme='pink' mr={3} onClick={onClose}>
+                            <Button colorScheme='tailwindPink' mr={3} onClick={onClose}>
                             Close
                             </Button>
-                            <Button variant='outline' colorScheme={'pink'}><a href={url}>Visit Page !</a></Button>
+                            <Button variant='outline' colorScheme={'tailwindPink'}><a href={url}>Visit Page !</a></Button>
                         </ModalFooter>
                         </ModalContent>
                     </Modal>

@@ -38,7 +38,7 @@ export default function NewsHandler({news}) {
                   <Text mb='3'>
                     By: {article.source}
                   </Text>
-                  <Box as='a' color='pink.500' href={article.url} fontWeight='bold'>
+                  <Box as='a' color='tailwindPink.600' href={article.url} fontWeight='bold'>
                     <a href={article.url} >
                     Read more
                     </a>

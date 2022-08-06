@@ -1,6 +1,7 @@
 import { MoralisProvider } from 'react-moralis'
 import '../styles/globals.css'
-import { ChakraProvider } from "@chakra-ui/react"
+import { extendTheme , ChakraProvider } from "@chakra-ui/react"
+import { theme } from '../theme/theme'
 import Head from "next/head";
 import { Loader } from '../components/Layout/Loader'
 import {useRouter} from 'next/router'
@@ -29,28 +30,14 @@ function MyApp({ Component, pageProps }) {
   
   
   return (
-    
-    <>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"></meta>
-        
-        <title>Dashboard</title>
-      </Head>
-      
-      <ChakraProvider >
-      
-          <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVERURL} >
-          { pageLoading || firstLoading
-                ? (<Loader />)
-              :
-                  <Component {...pageProps} />
-              
-              
-              } 
-          </MoralisProvider>
-      </ChakraProvider>
-    </>
+      <MoralisProvider appId={process.env.NEXT_PUBLIC_APPID} serverUrl={process.env.NEXT_PUBLIC_SERVERURL} >      
+        <ChakraProvider portalZIndex={60}  theme={theme}>
+            { pageLoading || firstLoading
+                  ? (<Loader />)
+                  : <Component {...pageProps} />
+                } 
+        </ChakraProvider>
+      </MoralisProvider>
   )
 }
 

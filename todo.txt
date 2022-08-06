@@ -1,0 +1,11 @@
+•	move useEffect logic to getstaticprops 
+•	color mismatch fix ✓
+•	overhaul contact page ✓
+•	fix _app.js mess
+•	readme.md View Demo -> View Page 
+•	meta tag for theme color 
+•	fix contact page button being blue „Learn More” ✓
+•	New About section
+•	horizontal mobile view tweaks
+•	in Contact page make header have a higher z index than the svg ✓
+•	disable landscape mode on mobile 

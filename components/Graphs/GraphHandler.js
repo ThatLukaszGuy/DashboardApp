@@ -23,7 +23,7 @@ export default function GraphHandler() {
         <Text fontSize={'4xl'} align={'center'} mt={'140px'} color={'gray.100'} >See all charts below</Text>
         <Text fontSize={'xl'} align={'center'} mt={'3px'} color={'gray.300'} >Make sure to reload the page if you resize your window , so all charts can adapt</Text>
         <div className='grid grid-cols-1 place-items-center mt-2'>
-            <Button variant={'outline'} colorScheme={'pink'} onClick={() => location.reload()} >Reload</Button>
+            <Button variant={'outline'} colorScheme={'tailwindPink'} onClick={() => location.reload()} >Reload</Button>
         </div>
         <Grid
         minH={{base:'100vh'}}

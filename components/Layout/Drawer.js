@@ -66,7 +66,7 @@ export default function PrivacyDrawer({ isOpen, onClose,btnRef }) {
                     </Text>
                   </DrawerBody>
                   <DrawerFooter>
-                    <Button colorScheme='pink'  mr={3} onClick={onClose}>
+                    <Button colorScheme='tailwindPink'  mr={3} onClick={onClose}>
                       Close 
                     </Button>
                     <Popover placement='top-end'>
@@ -80,9 +80,9 @@ export default function PrivacyDrawer({ isOpen, onClose,btnRef }) {
                           <PopoverCloseButton />
                           <PopoverBody >
                             <Flex>
-                              <Button leftIcon={<BiServer />} colorScheme='pink' variant='outline' onClick={() => window.location.href = 'https://moralis.io/terms/'}>Moralis.io</Button>
+                              <Button leftIcon={<BiServer />} colorScheme='tailwindPink' variant='outline' onClick={() => window.location.href = 'https://moralis.io/terms/'}>Moralis.io</Button>
                               <Spacer />
-                              <Button rightIcon={<HiOutlineMailOpen />} colorScheme='pink' variant='outline' onClick={() => window.location.href = 'https://www.emailjs.com/legal/privacy-policy/'}>EmailJS</Button>
+                              <Button rightIcon={<HiOutlineMailOpen />} colorScheme='tailwindPink' variant='outline' onClick={() => window.location.href = 'https://www.emailjs.com/legal/privacy-policy/'}>EmailJS</Button>
                             </Flex>
                           </PopoverBody>
                           <PopoverFooter>Links to each private policy</PopoverFooter>
