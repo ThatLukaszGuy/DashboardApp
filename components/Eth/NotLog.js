@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { HeadConfig } from '../Layout/HeadConfig';
 import Nav from '../Layout/Nav'
 
 export default function NotLog() {
@@ -10,7 +10,7 @@ export default function NotLog() {
   
     return (
     <>
-      <title>Logged out</title>
+      <HeadConfig title={'Logged Out'} color={'#4f545c'}/>
       <div className='bg-gray-700 relative h-screen '>
           <Nav />
           <div className='child '>

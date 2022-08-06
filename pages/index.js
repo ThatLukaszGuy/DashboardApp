@@ -4,7 +4,7 @@ import Login from '../components/Login/Login';
 import Sidebar from '../components/Layout/Sidebar';
 import Footer from '../components/Layout/Footer';
 import Latest from '../components/Latest/Latest';
-import Head from 'next/head';
+import { HeadConfig } from '../components/Layout/HeadConfig';
 
 export default function Home() {
 
@@ -15,12 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"></meta>
-        
-        <title>Dashboard</title>
-      </Head>
+      <HeadConfig title={'Dashboard'} color={'#000000'}/>
       <div className=''>
         <div className='flex'>  
           <Sidebar />
@@ -29,11 +24,9 @@ export default function Home() {
         <div id='login'> 
           <Login/>
         </div>
-
         <div id='other'>
           <Latest />
         </div>
-
         <div id='about'>
           <About />
         </div>

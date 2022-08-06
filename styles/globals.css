@@ -60,7 +60,6 @@ html {
   width: calc(100vw - 64px);
   margin-left: 64px;
   text-align: center;
-  position: relative;
 }
 
 
@@ -193,6 +192,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100vw;
+
 }
 
 .custom-shape-divider-bottom-1653421206 {

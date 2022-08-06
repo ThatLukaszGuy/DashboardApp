@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../Layout/Nav'
+import { HeadConfig } from '../Layout/HeadConfig';
 
 export default function NotLogSol() {
   const refreshPage = () => {
@@ -9,7 +10,7 @@ export default function NotLogSol() {
   
   return (
     <>
-      <title>Logged out</title>
+      <HeadConfig title={'Logged Out'} color={'#4f545c'}/>
       <div className='bg-gray-700 relative h-screen '>
           <Nav />
           <div className='child'>

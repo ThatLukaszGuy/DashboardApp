@@ -2,7 +2,6 @@ import { MoralisProvider } from 'react-moralis'
 import '../styles/globals.css'
 import { extendTheme , ChakraProvider } from "@chakra-ui/react"
 import { theme } from '../theme/theme'
-import Head from "next/head";
 import { Loader } from '../components/Layout/Loader'
 import {useRouter} from 'next/router'
 import { useState,useEffect } from 'react'

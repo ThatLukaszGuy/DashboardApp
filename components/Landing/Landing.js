@@ -8,8 +8,8 @@ export default function Landing() {
 
 
   return (
-    <div className='backroundIMG z-0'>
-      <div className='child'>
+    <div className='backroundIMG z-0  flex flex-col  flex-wrap  items-center justify-center'>
+      <div className=''>
         <h1 className='text-white z-10  font-bold text-5xl my-3'>Welcome to my <span className='text-pink-700'>Web3</span> Dashboard</h1>
         
         <h4 className='text-gray-400 z-10 font-bold text-2xl '>Check your ETH and SOL balances, nfts, transactions and stay up to date with everything you have to know</h4>

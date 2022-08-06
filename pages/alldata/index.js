@@ -1,7 +1,7 @@
 import React from 'react'
 import AllDataHandler from '../../components/AllData/AllDataHandler'
 import styles from '../../components/AllData/AllData.module.css'
-import Head from 'next/head'
+import { HeadConfig } from '../../components/Layout/HeadConfig'
 import { coinGecko } from '../../components/axios/axios'
 import axios from 'axios'
 
@@ -18,9 +18,7 @@ export default function alldata({ coinData }) {
   return (
     <>
     
-    <Head>
-      <title>All Data</title>
-    </Head>
+    <HeadConfig title={'All Data'} color={'#2f3136'}/>
 
     <div className={styles.pSetting}>
 

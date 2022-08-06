@@ -10,7 +10,7 @@
     An app allowing the visitor to see his nft's, transactions , balances and even send Ethereum
     <br/>
     <br/>
-    <a href="https://dashboard-app-nine-snowy.vercel.app/">View Demo</a>
+    <a href="https://dashboard-app-nine-snowy.vercel.app/">View Page</a>
     .
   </p>
 </p>

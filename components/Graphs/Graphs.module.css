@@ -36,7 +36,7 @@
 
 .lowerExSVG {
     position: absolute;
-    top: 60vh;
+    top: calc(60vh - 2px);
     left: 0;
     width: 100%;
     overflow: hidden;

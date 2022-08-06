@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import { HeadConfig } from '../../components/Layout/HeadConfig'
 import React from 'react'
 import ExchangeHandler from '../../components/Exchanges/ExchangeHandler'
 import { coinGeckoExchange } from '../../components/axios/axios'
@@ -16,9 +16,7 @@ export default function exchanges({exchanges}) {
   return (
     <>
 
-      <Head>
-        <title>Exchanges</title>
-      </Head>
+      <HeadConfig title={'Exchanges'} color={'#2D3748'}/>
       <ExchangeHandler exchanges={exchanges}/>
     </>
   )

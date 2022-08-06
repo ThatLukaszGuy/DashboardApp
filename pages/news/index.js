@@ -1,8 +1,8 @@
 import React from 'react'
 import NewsHandler from '../../components/News/NewsHandler'
-import Head from "next/head";
 import { newsOptions } from '../../components/axios/axios';
 import axios from 'axios';
+import { HeadConfig } from '../../components/Layout/HeadConfig';
 
 export async function getServerSideProps() {
   const response = await axios.request(newsOptions);
@@ -16,9 +16,7 @@ export async function getServerSideProps() {
 export default function News({news}) {
   return (
     <>
-    <Head>
-      <title>News</title>
-    </Head>
+    <HeadConfig title={'News'} color={'#2D3748'}/>
     <NewsHandler news={news}/>
 
     </>

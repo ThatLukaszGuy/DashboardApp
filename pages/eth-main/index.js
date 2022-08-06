@@ -3,6 +3,7 @@ import { useMoralis } from "react-moralis";
 import { useEffect } from 'react';
 import NotLog from '../../components/Eth/NotLog';
 import Log from '../../components/Eth/Log';
+import { HeadConfig } from '../../components/Layout/HeadConfig';
 
 export default function ethLogin() {
     const {isAuthenticated, authenticate, user, logout, isLoggingOut} = useMoralis()
@@ -29,7 +30,7 @@ export default function ethLogin() {
     }
     return (
         <>
-            <title>Eth Dashboard</title>
+            <HeadConfig title={'Eth Dashboard'} color={'#4f545c'}/>
             
 
             <Log  logout={logout} user={user} isLoggingOut={isLoggingOut}/>
