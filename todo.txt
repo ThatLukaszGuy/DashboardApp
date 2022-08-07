@@ -13,3 +13,4 @@
 •	margin for landing ✓
 •	margin for about ✓
 •   404 page ✓
+•   headconfig for contact ✓

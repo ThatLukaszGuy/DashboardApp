@@ -3,6 +3,7 @@ import SubNav from '../../components/Layout/SubNav'
 import { FaPhone } from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
 import PrivacyDrawer from '../../components/Layout/Drawer';
+import { HeadConfig } from '../../components/Layout/HeadConfig'
 import { useToast, 
           Box,
           Text,
@@ -50,6 +51,8 @@ export default function contact() {
   }
   
   return (
+    <>
+    <HeadConfig title={'Contact'} color={'#831843'}/>
     <div className=' bg-gray-700'>
       <div className='contact-container '>
         <SubNav currentRoute='contact' icon={<FaPhone size={32}/>}/>
@@ -115,5 +118,6 @@ export default function contact() {
         <p className='text-gray-700'>. </p>
       </div>
     </div>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import Moralis from 'moralis'
 import Details from './Details'
-
+import { Spinner } from '@chakra-ui/react'
 
 export default function Balance({user}) {
 
@@ -49,6 +49,7 @@ export default function Balance({user}) {
             </div>
             }
         <b> Other Tokens:</b>
+        {!data ? <div className='text-center'> <Spinner color='tailwindPink.500' /> </div> : ''}
         {data && data.map(token => (
                 
                 <div key={token.symbol} className='flex items-center justify-between my-1'>

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useMoralisWeb3Api } from 'react-moralis'
+import { Spinner } from '@chakra-ui/react'
 
 export default function Transactions({user}) {
   
@@ -31,6 +32,7 @@ export default function Transactions({user}) {
     <div>        
         
         <p> <b>Last 5 Transactions: </b></p>
+        {!transactions ? <div className='text-center'> <Spinner color='tailwindPink.500' /> </div> : ''}
         {transactions && transactions.map(transaction => (
             <div key={transaction.hash} className='my-2'>
                 <a href={`${BASE_URL}${transaction.hash}`} target='_blank' className='break-words hover:underline my-2 hover:text-pink-700'> {transaction.hash} </a>

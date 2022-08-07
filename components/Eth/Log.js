@@ -7,7 +7,7 @@ import TabsEl from './EthComponents/Tabs'
 export default function Log({logout, user, isLoggingOut}) {
   return (
     
-    <div className='bg-gray-800 h-screen bg-image-dashboard'>
+    <div className='bg-gray-800 min-h-screen bg-image-dashboard'>
       <Logout logout={logout} isLoggingOut={isLoggingOut} user={user}/>  
       
 

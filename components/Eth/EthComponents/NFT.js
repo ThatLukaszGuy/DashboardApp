@@ -1,10 +1,29 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useEffect,useRef } from 'react'
 import { useNFTBalances } from 'react-moralis'
+import { Button,Spinner,useDisclosure, 
+  Badge,
+  Divider,
+  UnorderedList,
+  ListItem,
+  Box,
+  Avatar,
+  Stack,
+  Text,
+  Heading,
+  List,
+  ListIcon,
+  Icon,  
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton, } from '@chakra-ui/react'
+import { NFTDetails } from './NFTDetails'
 
 export default function NFT({user}) {
-    
-
     const {getNFTBalances, data} = useNFTBalances()
 
     useEffect(() => {
@@ -19,17 +38,22 @@ export default function NFT({user}) {
 
     }, [])
 
-  
+
+      
+
+     
+
+
+//<NFTDetails uri={renderNFT(nft.image, true)} nft={nft} isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
   return (
     <div>
         <p> <b>My NFT's: </b></p>
+        {!data ? <div className='text-center'> <Spinner color='tailwindPink.500' /> </div> : ''}
+        
         {data && data.result.map((nft) => (
-            <div key={nft.token_uri} className='my-2'>
-                {nft.image && <img src={nft.image} alt=''/>}
-                <p className='break-words hover:text-pink-700'><a href={nft.token_uri} target='_blank'>{nft.token_uri}</a></p>
-            </div>
+            <NFTDetails key={nft.token_uri} nft={nft}/>
         ))}
-
+        
     </div>
   )
 }

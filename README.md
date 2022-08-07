@@ -52,9 +52,9 @@ Relying also on API's from: CoinGecko & CryptoNews
 
 ![Screen Shot](public/images/screenshots/MainS.png)
 
-
 ![Screen Shot](public/images/screenshots/SendS.png)
 
+![Screen Shot](public/images/screenshots/nft.png)
 
 ![Screen Shot](public/images/screenshots/logoutS.png)
 
