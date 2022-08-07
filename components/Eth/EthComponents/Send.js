@@ -59,7 +59,7 @@ export default function Send() {
                 <FormLabel htmlFor='amount'>
                     Amount of ETH
                 </FormLabel>
-                <NumberInput step={0.1} onChange={handleChange} focusBorderColor='pink.500'>
+                <NumberInput step={0.1} onChange={handleChange} focusBorderColor='tailwindPink.500'>
                     <NumberInputField id='amount' value={amount}/>
                     <NumberInputStepper>
                         <NumberIncrementStepper/>
@@ -69,7 +69,7 @@ export default function Send() {
             </FormControl>
 
             <FormLabel mt='4' htmlFor='receiver'>Send to</FormLabel>
-            <Input id='receiver' type='text' placeholder='Receiver address' value={receiver} onChange={e => setReceiver(e.target.value)} focusBorderColor='pink.500'/>
+            <Input id='receiver' type='text' placeholder='Receiver address' value={receiver} onChange={e => setReceiver(e.target.value)} focusBorderColor='tailwindPink.500'/>
             
             <button className="mt-4 flex-shrink-0 bg-pink-700 hover:bg-pink-800 border-pink-700 hover:border-pink-800 text-sm border-4 text-white py-1 px-2 rounded" type="submit" disabled={isFetching}>
                  Send !

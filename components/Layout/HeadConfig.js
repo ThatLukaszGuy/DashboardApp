@@ -9,7 +9,7 @@ export const HeadConfig = ({ title, color }) => {
       <meta name="description" content="DashboardApp for Solana and Ethereum" />
       <link rel="shortcut icon" href="/favicon.ico" />
       <meta charSet="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
       <meta name="keywords" content="DashboardApp ETH SOL"/>
       <meta name="author" content="ThatLukaszGuy"/>
       <meta name = "theme-color" content = {color}></meta>
@@ -20,6 +20,8 @@ export const HeadConfig = ({ title, color }) => {
       <link rel="manifest" href="favicon/site.webmanifest"/>
       <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5"/>
       <meta name="msapplication-TileColor" content="#da532c"/>
+
+
     </Head>
   )
 }

@@ -14,6 +14,7 @@ import { Button,Spinner,useDisclosure,
   DrawerCloseButton,
  } from '@chakra-ui/react'
 
+
 export const NFTDetails = ({ nft }) => {
   console.log(nft)
   
@@ -27,7 +28,7 @@ export const NFTDetails = ({ nft }) => {
     } else {
       return (
         <div>
-          <img src={newURI} alt='nft' className='rounded-md'/>
+          <img src={newURI} alt='nft' className='rounded-md' />
         </div>
       )
     }  
@@ -78,8 +79,8 @@ export const NFTDetails = ({ nft }) => {
                     <Divider mb={1}/>
                     <UnorderedList color='white' fontSize='sm'>
                       <ListItem>Name: {nft.metadata.name}</ListItem>
-                      <ListItem>Image uri: {renderNFT(nft.image, true)}</ListItem>
-                      <ListItem>External url: {nft.metadata.external_url}</ListItem>
+                      <ListItem>Image uri:<a  className='hover:text-pink-700' href={renderNFT(nft.image, true)} target='_blank'> {renderNFT(nft.image, true)}</a></ListItem>
+                      <ListItem>External url: <a  className='hover:text-pink-700' href={nft.metadata.external_url} target='_blank'>{nft.metadata.external_url}</a></ListItem>
                     </UnorderedList>
 
                     <Text fontSize='2xl' color='white' mt={2}>

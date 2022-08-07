@@ -11,7 +11,7 @@
     <br/>
     <br/>
     <a href="https://dashboard-app-nine-snowy.vercel.app/">View Page</a>
-    .
+    
   </p>
 </p>
 
@@ -64,7 +64,7 @@ Relying also on API's from: CoinGecko & CryptoNews
 
 ![Screen Shot](public/images/screenshots/NewS.png)
 
-![Screen Shot](public/images/screenshots/coinS.png)
+![Screen Shot](public/images/screenshots/coins.png)
 
 ![Screen Shot](public/images/screenshots/ExchangesS.png)
 

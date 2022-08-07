@@ -21,11 +21,12 @@ export default function SolNFT({user}) {
 
 
             try {
-                let result = SolanaAPI.account.getNFTs({
+                let result = await SolanaAPI.account.getNFTs({
                     network: 'devnet',
                     address: walletAddress
                 })
                 setNftAmount(result)
+                console.log(result)
             } catch (error) {
                 toast({
                     title: 'Couldn\'t load data , try again later',
@@ -48,6 +49,7 @@ export default function SolNFT({user}) {
         <p className=""><b>Nfts :</b> <span className='text-pink-700'> {!isLoading ? nftAmount.length : ''} </span>  </p>
         <ul className="break-words">
             {nftAmount.length > 0 && !isLoading && !isLoading && nftAmount.map((nft, i) => (
+                
                 <li key={i}>{nft.mint} {nft.amount}</li>
             ))}
         </ul>
