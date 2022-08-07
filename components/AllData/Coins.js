@@ -1,10 +1,10 @@
 import React from 'react'
 import { Stat, StatArrow } from '@chakra-ui/react'
-
+import { Box } from '@chakra-ui/react'
 
 export default function Coins({ name, image, symbol, price, volume, priceChange, marketcap }) {
   return (
-    <div className='flex justify-between my-4 text-white bg-gray-900 rounded-md p-4  flex-col md:flex-row md:text-left text-center lg:hover:scale-[1.02] md:hover:scale-[1.04] hover:z-50 ease-in-out duration-300 hover:transform-none hover:border-pink-700 border-transparent border-2 border-gray-600 shadow-lg hover:shadow-2xl'>
+    <Box bg={'gray.900'} className='flex justify-between my-4 text-white rounded-md p-4  flex-col md:flex-row md:text-left text-center lg:hover:scale-[1.02] md:hover:scale-[1.04] hover:z-50 ease-in-out duration-300 hover:transform-none hover:border-pink-700 border-transparent border-2 border-gray-600 shadow-lg hover:shadow-2xl'>
       <div className='flex break-words  md:justify-start justify-center'>
         <img src={image} alt='crypto' style={{ width: '30px', height:'30px' }} />
           <h1 className='ml-2'>{name}</h1>
@@ -28,6 +28,6 @@ export default function Coins({ name, image, symbol, price, volume, priceChange,
       </div>
       
       
-    </div>
+    </Box>
   )
 }

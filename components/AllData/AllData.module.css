@@ -33,12 +33,12 @@
   }
   
   .allSvg .shapeFill {
-    fill: #2F3136;
+    fill: #1A202C;
   }
   
   .pSetting {
     padding-bottom: 40vh;
     --tw-bg-opacity: 1;
-    background-color: rgb(47 49 54 / var(--tw-bg-opacity));
+    background-color: #1A202C;
   }
   
