@@ -53,23 +53,22 @@ export default function NewsHandler({news}) {
           {more? 
                   
                   news.slice(16).map((article, i) => (
-                    <>
-                      <LinkBox key={i} id={i}  as='article' maxW='sm' p='5' borderWidth='1px' rounded='md' background='gray.900' color='white' className='sm:hover:scale-105 hover:z-50 ease-in-out duration-300 hover:transform-none hover:border-pink-700 border-transparent border-gray-600 shadow-lg hover:shadow-2xl'>
-                        <Heading size='md' my='2'>
-                          <LinkOverlay href={article.url}>
-                            {article.title}
-                          </LinkOverlay>
-                        </Heading>
-                        <Text mb='3'>
-                          By: {article.source}
-                        </Text>
-                        <Box as='a' color='pink.500' href={article.url} fontWeight='bold'>
-                          <a href={article.url} >
-                            Read more 
-                          </a>
-                        </Box>
-                      </LinkBox>
-                    </>
+                    <LinkBox key={article[i]} as='article' maxW='sm' p='5' borderWidth='1px' rounded='md' background='gray.900' color='white'  className='sm:hover:scale-105 hover:z-50 ease-in-out duration-300 hover:transform-none hover:border-pink-700 border-transparent border-gray-600 shadow-lg hover:shadow-2xl' >
+                    <Heading size='md' my='2'>
+                      <LinkOverlay href={article.url}>
+                        {article.title}
+                      </LinkOverlay>
+                    </Heading>
+                    <Text mb='3'>
+                      By: {article.source}
+                    </Text>
+                    <Box as='a' color='tailwindPink.600' href={article.url} fontWeight='bold'>
+                      <a href={article.url} >
+                      Read more
+                      </a>
+                    </Box>
+                  </LinkBox>
+                
 
 
                 )) 

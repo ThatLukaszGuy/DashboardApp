@@ -99,7 +99,19 @@ html {
   background-size: cover;
   max-width: 100vw;
 }
+@media (max-height: 400px) { 
+  .avatar {
+    display: none!important;
+  }
+  .about-box {
+    flex-wrap: wrap;
+  }
 
+  .about-text {
+    display: none;
+  }
+
+ }
 .latest-container {
   width: calc(100vw - 64px);
   margin-left: 64px;
