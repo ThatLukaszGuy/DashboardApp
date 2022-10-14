@@ -32,6 +32,7 @@
 
 ## About The Project
 
+(Now migrated to the Goerli Testnet)
 
 This website can show the user the digital assets he posesses in form of a clear dashboard. It's possible to transfer ETH to other accounts. See NFT's and visit their IPFS uri, see transactions and balances. You can also set ur own username wich will be remembered.
 

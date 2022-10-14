@@ -16,7 +16,7 @@ export default function Balance({user}) {
 
     const fetchNativeBalance = async () => {
         const result = await Web3Api.account.getNativeBalance({
-            chain: 'rinkeby',
+            chain: 'goerli',
             address: user.get('ethAddress')
         }).catch(e => console.log(e))
         
@@ -32,7 +32,7 @@ export default function Balance({user}) {
         fetchNativeBalance()
         fetchERC20Balances({
             params: {
-                chain: 'rinkeby',
+                chain: 'goerli',
                 address: user.get('ethAddress')
             }
         })

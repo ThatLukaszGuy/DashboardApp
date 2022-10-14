@@ -13,7 +13,7 @@ export default function Transactions({user}) {
 
     const fetchTransactions = async ()=> {
         const data = await Web3Api.account.getTransactions({
-            chain: 'rinkeby',
+            chain: 'goerli',
             address: user.get('ethAddress'),
             limit: 5
         })

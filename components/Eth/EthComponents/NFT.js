@@ -29,7 +29,7 @@ export default function NFT({user}) {
     useEffect(() => {
       getNFTBalances({
           params: {
-              chain: 'rinkeby',
+              chain: 'goerli',
               address: user.get('ethAddress')
           }
       });
