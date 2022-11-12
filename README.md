@@ -10,6 +10,7 @@
     An app allowing the visitor to see his nft's, transactions , balances and even more!
     <br/>
     <br/>
+    Warning! - The apps backend is self hosted free on railway meaning its only active rougly 21 days a motnhs (This only affects the login/metamask part) , all other parts - News, Graphs, Exchanges, Data & contact still keep their full functionality. 
     <a href="https://dashboard-app-nine-snowy.vercel.app/">View Page</a>
     
   </p>

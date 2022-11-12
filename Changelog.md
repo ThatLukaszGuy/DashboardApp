@@ -14,10 +14,4 @@ Version 0.1.0 -> 0.2.0
 Outlook:
 
 - Bug Fixes
-
-to do
-contact page overhaul
-
-something new 
-change bg of graphs, all data, news, exchanges and make the theme the same
-
+- Show all nfts (currently bugged & only sometimes works)
